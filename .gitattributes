@@ -1,0 +1,2 @@
+# Metin dosyaları her platformda LF ile alınır (Windows core.autocrlf=true dâhil).
+* text=auto eol=lf

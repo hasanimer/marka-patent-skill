@@ -1,0 +1,12 @@
+node_modules/
+tests/node_modules/
+# Yerel sonuç dökümleri depoya girmez (kişisel veri içerebilir)
+sonuc*.json
+dokum/
+*.dump.json
+# İşletim sistemi ve düzenleyici dosyaları
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "version": "2026-10-18",
+  "fictional": true,
+  "status": "not_measured",
+  "note": "Kurgusal örnekler; yalnız yapı doğrulanır, tetiklenme oranı canlı oturumlarda ölçülmedi. Köşeli parantezli değerler yer tutucudur.",
+  "cases": [
+    {
+      "id": "T01",
+      "query": "TÜRKPATENT'te [marka adı] diye bir marka tescilli mi?",
+      "should_trigger": true,
+      "tool": "searchTrademarks",
+      "note": "Marka adıyla arama."
+    },
+    {
+      "id": "T02",
+      "query": "[marka adı] için 9 ve 42. sınıflarda benzer kayıt var mı, listele.",
+      "should_trigger": true,
+      "tool": "searchTrademarks",
+      "note": "Nice süzgeci istemcide; benzerlik hükmü kurulmaz, kayıtlar listelenir."
+    },
+    {
+      "id": "T03",
+      "query": "Müvekkilin markasını tescile başvurmadan önce TÜRKPATENT'te ön araştırma yap.",
+      "should_trigger": true,
+      "tool": "searchTrademarks",
+      "note": "Tescil öncesi ön araştırma."
+    },
+    {
+      "id": "T04",
+      "query": "[başvuru numarası] numaralı marka başvurusunun Bülten tarihini ve durumunu getir.",
+      "should_trigger": true,
+      "tool": "getTrademarkDetails",
+      "note": "Dosya detayı."
+    },
+    {
+      "id": "T05",
+      "query": "İcra dosyasında malvarlığı araştırması için borçlu şirket [şirket unvanı] adına kayıtlı marka ve patent var mı?",
+      "should_trigger": true,
+      "tool": "searchTrademarks",
+      "note": "Hukuki amaç belirtilmiş hak sahibi araması."
+    },
+    {
+      "id": "T06",
+      "query": "Başvuru sahibi [şirket unvanı] olan patentleri bul.",
+      "should_trigger": true,
+      "tool": "searchPatents",
+      "note": "Patent araması."
+    },
+    {
+      "id": "T07",
+      "query": "Locarno 06-01 sınıfında [tasarım adı] tasarımı tescilli mi?",
+      "should_trigger": true,
+      "tool": "searchDesigns",
+      "note": "Tasarım araması."
+    },
+    {
+      "id": "T08",
+      "query": "Bu marka Bültende yayımlandı; yayıma itiraz için son gün ne zaman?",
+      "should_trigger": true,
+      "tool": "getTrademarkDetails",
+      "note": "Bülten tarihi detaydan alınır, süre Legaluga SMK süre hesaplayıcısına bırakılır."
+    },
+    {
+      "id": "T09",
+      "query": "Şu 200 markalık listeyi TÜRKPATENT'te tek tek tara ve tablo yap.",
+      "should_trigger": true,
+      "tool": null,
+      "note": "Skill tetiklenir ama toplu taramayı reddeder; tek sorgu ilkesini açıklar."
+    },
+    {
+      "id": "N01",
+      "query": "EUIPO'da [marka adı] için Avrupa Birliği markası var mı?",
+      "should_trigger": false,
+      "tool": null,
+      "note": "Kapsam dışı: EUIPO."
+    },
+    {
+      "id": "N02",
+      "query": "Marka tescil başvurusu için dilekçe taslağı hazırla.",
+      "should_trigger": false,
+      "tool": null,
+      "note": "Sicil araması değil, belge hazırlama."
+    },
+    {
+      "id": "N03",
+      "query": "Kira tespit davasında emsal karar bul.",
+      "should_trigger": false,
+      "tool": null,
+      "note": "İlgisiz alan."
+    }
+  ]
+}
