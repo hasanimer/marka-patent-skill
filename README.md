@@ -115,3 +115,5 @@ Bu paket, Said Sürücü'nün [saidsurucu/markapatent-skill](https://github.com/
 Said Sürücü ve TÜRKPATENT bu paketi onaylamış ya da desteklemiş değildir. Paket TÜRKPATENT logosunu kullanmaz; adı yalnız kaynağı belirtmek için anar. Sonuçlar resmî kayıt değildir.
 
 [MIT Lisansı](LICENSE): Copyright (c) 2026 Said Sürücü; Copyright (c) 2026 Hasan İmer Akın.
+
+Bu uyarlamayı kullandığınız çalışmalarda [Marka ve Patent Skill](https://github.com/hasanimer/marka-patent-skill) bağlantısını paylaşarak atıf yapmanızı rica ederiz.
